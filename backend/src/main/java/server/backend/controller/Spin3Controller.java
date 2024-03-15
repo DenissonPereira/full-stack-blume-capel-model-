@@ -9,21 +9,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import server.backend.entity.Spin1;
-import server.backend.service.Spin1Service;
+import server.backend.entity.Spin3;
+import server.backend.service.Spin3Service;
 
 @RestController
 @RequestMapping("/")
-public class Spin1Controller {
+public class Spin3Controller {
     
     @Autowired
-    private Spin1Service spin1Service;
+    private Spin3Service spin3Service;
 
-    @GetMapping("/spin1")
-    public ResponseEntity<List<Spin1>> getAllSpins() {
-        List<Spin1> spin1 = spin1Service.getAllSpins1();
-        if (spin1 != null && !spin1.isEmpty()) {
-            return new ResponseEntity<>(spin1, HttpStatus.OK);
+    @GetMapping("/spin3")
+    public ResponseEntity<List<Spin3>> getAllSpins() {
+        List<Spin3> spin3 = spin3Service.getAllSpins3();
+        if (spin3 != null && !spin3.isEmpty()) {
+            return new ResponseEntity<>(spin3, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }

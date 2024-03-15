@@ -6,15 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import server.backend.entity.Spin1;
-import server.backend.repository.SpinRepository;
+import server.backend.repository.Spin1Repository;
 
 @Service
-public class SpinService {
+public class Spin1Service {
     
     @Autowired
-    private SpinRepository spinRepository;
+    private Spin1Repository spin1Repository;
 
-    public List<Spin1> getAllSpins() {
-        return spinRepository.findAll();
+    public List<Spin1> getAllSpins1() {
+        return spin1Repository.findAll();
     }
 }
