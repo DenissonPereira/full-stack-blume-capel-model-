@@ -15,8 +15,8 @@ const authOptions: NextAuthOptions = {
                     id: '1',
                     email: 'denisson@email.com',
                     password: '123',
-                    nome: 'Denisson Pereira',
-                    role: 'admin'
+                    name: 'Denisson',
+                    role: 'admin',
                 }
 
                 const isValidEmail = user.email === credentials?.email
@@ -30,7 +30,33 @@ const authOptions: NextAuthOptions = {
 
             }
         })
-    ]
+    ],
+    callbacks: {
+        jwt: ({ token, user }) => {
+            const customUser = user as unknown as any
+            
+            if (user) {
+                return {
+                    ...token,
+                    role: customUser.role
+                }
+            }
+
+            return token
+        },
+        session: async ({ session, token}) => {
+            return {
+                ...session,
+                user: {
+                    email: token.email,
+                    role: token.role
+                }
+            }
+        }
+    },
+    pages: {
+        signIn: '/auth/login'
+    }
 }
 const handler = NextAuth(authOptions)
 
