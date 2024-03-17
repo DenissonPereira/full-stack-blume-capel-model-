@@ -1,1 +1,24 @@
+* Next Auth
+
 npm install next-auth
+
+
+*Docker
+
+sudo apt-get update
+sudo apt-get install docker-compose-plugin
+ sudo docker build -t denissonp/dockervite .
+sudo docker run -p 3000:3000 -d denissonp/dockernext
+sudo docker ps
+sudo docker stop (aqui vai o CONTAINER ID)
+
+
+* Variáveis de ambiente
+
+nano ~/.bashrc
+export NOME_DA_VARIAVEL="variavel"
+
+
+* Storybook
+
+npm run storybook
