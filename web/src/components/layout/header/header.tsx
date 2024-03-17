@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { SignOutButton } from "./sign-out-button"
+import { SignOutButton } from "../../common/button-out/sign-out-button"
 import { getServerSession } from "next-auth"
 
 

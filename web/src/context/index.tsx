@@ -2,9 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useState } from "react"
 import { Spin } from "@/model";
-import { loadSpin1 } from "@/services/spin1"
-import { loadSpin2 } from "@/services/spin2";
-import { loadSpin3 } from "@/services/spin3";
+import { loadSpin1, loadSpin2, loadSpin3 } from "@/services"
 
 type SpinProps = {
     spin1: Spin[];
@@ -32,8 +30,10 @@ export const SpinProvider:React.FC<Props> =  ({children}: Props) => {
         loadSpin3(setSpin3);
     }, [])
 
+    const values = { spin1, setSpin1, spin2, setSpin2, spin3, setSpin3 }
+
     return (
-        <Context.Provider value={{spin1, setSpin1, spin2, setSpin2, spin3, setSpin3}}>
+        <Context.Provider value={values}>
             {children}
         </Context.Provider>
     );
