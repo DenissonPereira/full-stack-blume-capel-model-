@@ -1,18 +1,11 @@
 'use client'
 
+import { Spin } from '@/model';
 import React, { useState, useEffect } from 'react';
 
-interface ApiData {
-    id: number;
-    temperatura: number;
-    m_a: number;
-    m_b: number;
-    mag_staggered: number;
-    mag_total: number;
-}
 
 const Mag = () => {
-    const [data, setData] = useState<ApiData[]>([]); 
+    const [data, setData] = useState<Spin[]>([]); 
 
     useEffect(() => {
         const fetchData = async () => {

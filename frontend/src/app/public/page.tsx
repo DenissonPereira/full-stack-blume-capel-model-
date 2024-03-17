@@ -1,15 +1,21 @@
 'use client'
 
+import { useSpinContext } from "@/context";
 import { useSession } from "next-auth/react"
 
 export default function PublicPage() {
 
     const { data: session } = useSession();
+    const {spin1} = useSpinContext();
 
     return (
-        <div className="w-full h-screen flex justify-center items-center">
-            <h1 className="text-center">Publica rota</h1>
-            {session && <pre>{JSON.stringify(session, null, 2)}</pre>}
+        <div className="w-full h-screen flex flex-col justify-center items-center">
+            <div className="w-full h-screen flex flex-col items-center mt-52">
+                {spin1.map((spin) => (
+                    <p>mag: {spin.m_a}</p>
+                ))}
+            </div>
+
         </div>
     )
 }
