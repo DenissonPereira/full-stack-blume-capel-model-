@@ -7,7 +7,7 @@ export const Titulo = () => {
             </div>
             <hr className="border-t-2 border-azul_claro w-3/6 h-0.5 my-4" />
             <div className="flex flex-col items-start w-3/5">
-                <p className="text-branco text-2xl">A API fornecerá informações detalhadas sobre as magnetizações em diferentes condições, permitindo que pesquisadores e entusiastas da física acessem e utilizem esses dados de forma eficiente em suas análises e simulações.</p>
+                <p className="text-branco text-2xl">The API will provide detailed information about magnetizations under different conditions, allowing researchers and physics enthusiasts to access and efficiently utilize this data in their analyses and simulations.</p>
             </div>
         </div>
     )

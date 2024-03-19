@@ -7,6 +7,10 @@ export default function Page() {
       <div className="">
         <Titulo />
       </div>
+      <div className='flex gap-4'>
+        <button className='bg-branco p-4 rounded-md text-preto font-bold hover:bg-amarelo'>Get Started</button>
+        <button className='bg-cinza p-4 rounded-md text-preto font-bold hover:bg-azul_azinzentado'>Learn BCM</button>
+      </div>
     </div>
   )
 }
