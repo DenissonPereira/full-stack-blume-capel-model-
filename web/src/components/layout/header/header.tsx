@@ -1,6 +1,5 @@
-
 import Link from "next/link"
-import { SignOutButton } from "../../common/button-out/sign-out-button"
+import { SignOutButton } from "../../common"
 import { getServerSession } from "next-auth"
 
 
@@ -9,7 +8,7 @@ const Header = async () => {
     const session = await getServerSession()
 
     return (
-        <header className="fixed w-full h-20 flex items-center bg-amber-950 text-slate-50">
+        <header className="fixed w-full h-20 flex items-center bg-primary text-slate-50">
             <nav className="w-full flex item-center justify-between m-auto max-w-screen-xl">
                 <Link href="/">Logo</Link>
                 <ul className="flex items-center gap-10">
