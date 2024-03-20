@@ -166,8 +166,50 @@ INSERT INTO `spin3_seq` VALUES (201);
 UNLOCK TABLES;
 
 --
--- Dumping routines for database 'blume_capel'
+-- Table structure for table `spins`
 --
+
+DROP TABLE IF EXISTS `spins`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `spins` (
+  `id` bigint NOT NULL,
+  `valor_spin` double NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `spins`
+--
+
+LOCK TABLES `spins` WRITE;
+/*!40000 ALTER TABLE `spins` DISABLE KEYS */;
+INSERT INTO `spins` VALUES (1,1),(2,2),(3,3);
+/*!40000 ALTER TABLE `spins` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `spins_seq`
+--
+
+DROP TABLE IF EXISTS `spins_seq`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `spins_seq` (
+  `next_val` bigint DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `spins_seq`
+--
+
+LOCK TABLES `spins_seq` WRITE;
+/*!40000 ALTER TABLE `spins_seq` DISABLE KEYS */;
+INSERT INTO `spins_seq` VALUES (101);
+/*!40000 ALTER TABLE `spins_seq` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -178,4 +220,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-19 15:57:15
+-- Dump completed on 2024-03-19 22:06:49
