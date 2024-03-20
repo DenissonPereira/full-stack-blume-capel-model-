@@ -1,11 +1,11 @@
 import { Spins } from "@/model";
+import { connectServer } from "./connect";
 
-export async function loadSpins(setSpin: (setSpin: Spins[]) => void) {
+export async function loadSpins(setSpin: (spin: Spins[]) => void) {
     try {
-        const response = await fetch('http://localhost:8080/spins');
-        const jsonData = await response.json();
-        setSpin(jsonData);
-    } catch(error) {
+        const {data} = await connectServer.get('/spins');
+        setSpin(data)
+    } catch (error) {
         console.error('Erro ao chamar a API: ', error);
         return undefined;
     }
