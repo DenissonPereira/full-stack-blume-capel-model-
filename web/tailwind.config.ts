@@ -25,7 +25,10 @@ const config: Config = {
       azul_azinzentado: "#5E7D8B",
       branco: "#FFFFFF",
       cinza: "#808080",
-      preto: "#000000"
+      preto: "#000000",
+      branco_hover: "#EDEDED",
+      azul_hover: "#5F96D8",
+      background: "#FAF9F8"
     },
   },
   plugins: [],
