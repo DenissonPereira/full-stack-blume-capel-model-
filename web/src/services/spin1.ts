@@ -20,3 +20,11 @@ export async function createSpin1(newSpin: Spin, onSuccess: () => void, onError:
         onError(error);
     }
 }
+
+export async function deleteSpin1(id: number) {
+    try {
+        await connectServer.delete(`/spin1/${id}`);
+    } catch (error) {
+        console.error('Erro ao acessar API: ', error);
+    }
+}

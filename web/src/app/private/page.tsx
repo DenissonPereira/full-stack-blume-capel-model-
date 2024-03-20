@@ -1,6 +1,6 @@
 'use client'
 
-import { CriarSpin } from "@/components";
+import { CriarSpin, DeletarSpin } from "@/components";
 
 export default function PrivatePage() {
 
@@ -8,6 +8,7 @@ export default function PrivatePage() {
         <div className="w-full h-screen flex justify-center items-center bg-background">
             <h1 className="text-center">Publica privata</h1>
             <CriarSpin />
+            <DeletarSpin />
         </div>
     )
 }
