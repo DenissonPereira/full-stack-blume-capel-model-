@@ -10,3 +10,13 @@ export async function loadSpin1(setSpin1: (spin1: Spin[]) => void) {
         return undefined;
     }
 }
+
+export async function createSpin1(newSpin: Spin, onSuccess: () => void, onError: (error: any) => void) {
+    try {
+        await connectServer.post('/spin1', newSpin);
+        onSuccess();
+    } catch (error) {
+        console.error('Erro ao criar novo Spin: ', error);
+        onError(error);
+    }
+}
