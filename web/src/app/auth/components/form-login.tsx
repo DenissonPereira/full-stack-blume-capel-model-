@@ -38,34 +38,47 @@ const LoginForm = () => {
 
     return (
         <div className="w-full h-screen flex items-center justify-center">
-            <form action="" className="p-10 border rounded-lg" onSubmit={handleLogin}>
-                <h1 className="text-3xl font-bold rounded-lg w-96">Login</h1>
-                <p className="text-sm text-slate-700 mb-10">Faça o login para continuar.</p>
+            <form action="" className="p-10 border rounded-lg" onSubmit={handleLogin} style={{ backgroundImage: `url('/assets/images/background.png')`, backgroundSize: 'cover' }}>
+                <h1 className="text-3xl font-bold rounded-lg w-96 text-branco">Login</h1>
+                <p className="text-sm text-branco mb-10">Please log in to continue.</p>
                 <div className="flex flex-col">
                     <div className="flex flex-col gap-1 mb-6">
-                        <h2>E-mail</h2>
+                        <h2 className="text-branco">E-mail</h2>
                         <input 
                             type="email"
                             name="email"
                             onChange={(e) => setEmail(e.target.value)}
-                            className="border rounded w-fit p-3"
+                            placeholder=" @email.com"
+                            className="border rounded p-3"
                         />
                     </div>
                     <div className="flex flex-col gap-1 mb-6">
-                        <h2>Senha</h2>
+                        <h2 className="text-branco">Password</h2>
                         <input 
-                            type="text"
+                            type="password"
                             name="password"
                             onChange={(e) => setPassword(e.target.value)}
-                            className="border rounded w-fit p-3"
+                            placeholder=" password"
+                            className="border rounded p-3"
                         />
                     </div>
+                    <div className="flex justify-between text-branco">
+                        <div className="flex gap-2">
+                            <input type="checkbox" name="" id="" required />
+                            <p>I agree to terms</p>
+                        </div>
+                        <div>
+                            <p>I forgot my password</p>
+                        </div>
+                    </div>
                     {error && <span className="text-red-400 text-sm block mt-2">{error}</span>}
-                    <button 
-                        type="submit" className="mt-10 bg-rose-950 text-slate-50 p-3 rounded"
-                    >
-                        Entrar
-                    </button>
+                    <div className="flex justify-center pt-5">
+                        <button
+                            type="submit" className="bg-branco p-4 rounded-md text-preto font-bold hover:bg-branco_hover flex justify-center items-center gap-1"
+                        >
+                            Access account
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
