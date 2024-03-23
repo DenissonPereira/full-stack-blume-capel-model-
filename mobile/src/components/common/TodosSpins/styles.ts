@@ -17,7 +17,8 @@ export const styles = StyleSheet.create({
         width: 220,
         height: 50,
         borderRadius: 5,
-        fontSize: 25
+        fontSize: 25,
+        textAlign: 'center'
     },
     button1: {
         flexDirection: 'row',

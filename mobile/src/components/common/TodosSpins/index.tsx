@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, TextInput, TouchableOpacity, Text, Keyboard, KeyboardAvoidingView, Platform } from "react-native";
-import { Spin1, Spin2, Spin3 } from "../../containers";
+import { Spin1, Spin2, Spin3, SpinNaoEncontrado } from "../../containers";
 import { styles } from "./styles";
 import { Feather } from '@expo/vector-icons'
 
@@ -20,6 +20,8 @@ export const TodosSpins = () => {
             setValor(2);
         } else if (numberValue == 3) {
             setValor(3);
+        } else {
+            setValor(0);
         }
         Keyboard.dismiss(); 
     };
@@ -59,6 +61,7 @@ export const TodosSpins = () => {
                 {valor == 1 && <Spin1 />}
                 {valor == 2 && <Spin2 />}
                 {valor == 3 && <Spin3 />}
+                {valor == 0 && <SpinNaoEncontrado />}
             </View>
         </KeyboardAvoidingView>
     );
