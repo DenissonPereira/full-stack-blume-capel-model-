@@ -30,5 +30,12 @@ export const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-    }
+    },
+    underline: {
+        borderBottomColor: colors.primary, 
+        borderBottomWidth: 3,       
+        width: 250,
+        marginBottom: 5,
+        marginTop: 5
+      },
 });

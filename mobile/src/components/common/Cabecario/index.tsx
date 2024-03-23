@@ -15,6 +15,7 @@ export const Cabecario = () => {
                     <Fontisto name="atom" size={60} color={colors.branco} />
                 </View>
                 <Text style={styles.text1}>Blume-Capel Model</Text>
+                <View style={styles.underline} />
                 <Text style={styles.text2}>Magnetizations API</Text>
             </View>
         </ImageBackground>
