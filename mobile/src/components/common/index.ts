@@ -1,2 +1,5 @@
 export * from './Cabecario'
 export * from './TextoHome'
+export * from './BotoesHome'
+export * from './ChamarSpins'
+export * from './TodosSpins'
