@@ -1,6 +1,7 @@
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import { TabRoutes } from './tab.routes';
 import { Feather } from '@expo/vector-icons'
+import { Image } from 'react-native';
 
 
 const Drawer = createDrawerNavigator();
@@ -14,8 +15,10 @@ export default function DrawerRoutes() {
                     backgroundColor: '#fff'
                 },
                 headerStyle: {
-                    backgroundColor: '#FFFFFF'
-                }
+                    backgroundColor: '#FFFFFF',
+
+                },
+                headerShown: false,
             }}
         >
             <Drawer.Screen

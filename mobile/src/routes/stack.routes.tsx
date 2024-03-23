@@ -10,7 +10,7 @@ export default function StackRoutes() {
             <Stack.Screen 
                 name="home"
                 component={Home}
-                options={{ headerShown: false}}
+                options={{ headerShown: false }}
             />
         </Stack.Navigator>
     )

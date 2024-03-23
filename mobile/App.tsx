@@ -1,8 +1,11 @@
-import 'react-native-gesture-handler';
+import { SpinProvider } from './src/context';
 import Routes from './src/routes';
 
 export default function App() {
   return (
-    <Routes />
+    <SpinProvider>
+      <Routes />
+    </SpinProvider>
+
   );
 }
