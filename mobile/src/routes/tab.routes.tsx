@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import StackRoutes from './stack.routes';
 import { Feather, Fontisto } from '@expo/vector-icons'
-import { Buscar, Config, Modelo, Spins } from '../screens';
+import { Helper, Modelo, Sobre, Spins } from '../screens';
 import { View } from 'react-native';
 import { colors } from '../styles';
 
@@ -29,10 +29,10 @@ export const TabRoutes = () => {
             />
 
             <Tab.Screen
-                name='buscarTab'
-                component={Buscar}
+                name='sobreTab'
+                component={Sobre}
                 options={{
-                    tabBarIcon: ({ color, size }) => <Feather name='search' color={color} size={size} />
+                    tabBarIcon: ({ color, size }) => <Feather name='book' color={color} size={size} />
                 }}
             />
 
@@ -62,10 +62,10 @@ export const TabRoutes = () => {
             />
 
             <Tab.Screen
-                name='configTab'
-                component={Config}
+                name='helperTab'
+                component={Helper}
                 options={{
-                    tabBarIcon: ({ color, size }) => <Feather name='settings' color={color} size={size} />
+                    tabBarIcon: ({ color, size }) => <Feather name='help-circle' color={color} size={size} />
                 }}
             />
         </Tab.Navigator>

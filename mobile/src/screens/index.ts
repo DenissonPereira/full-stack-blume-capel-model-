@@ -1,5 +1,5 @@
 export * from './Home'
-export * from './Config'
-export * from './Buscar'
+export * from './Helper'
+export * from './Sobre'
 export * from './Spins'
 export * from './Modelo'
