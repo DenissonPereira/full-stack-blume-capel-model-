@@ -7,7 +7,7 @@ export const styles = StyleSheet.create ({
         justifyContent: 'center',
         alignItems: 'center',
         gap: 30,
-        marginBottom: 20
+        marginBottom: 70
     },
     image: {
         resizeMode: 'contain',

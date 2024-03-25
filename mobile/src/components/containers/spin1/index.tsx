@@ -1,5 +1,6 @@
 import { View, Text, ScrollView } from "react-native"
 import { useSpinContext } from "../../../context"
+import { styles } from "./styles";
 
 
 export const Spin1 = () => {
@@ -9,12 +10,12 @@ export const Spin1 = () => {
     return(
         <ScrollView>
             {spin1.map((item) => (
-                <View key={item.id}>
-                    <Text>Temperature: {item.temperatura}</Text>
-                    <Text>m_A: {item.m_a}</Text>
-                    <Text>m_B: {item.m_b}</Text>
-                    <Text>mag_staggered: {item.mag_staggered}</Text>
-                    <Text>mag_total: {item.mag_total}</Text>
+                <View key={item.id} style={styles.view}>
+                    <Text><Text  style={styles.temp}>Temperature:</Text> {item.temperatura}</Text>
+                    <Text><Text style={styles.maga}>Magnetization A:</Text> {item.m_a}</Text>
+                    <Text><Text style={styles.magb}>Magnetization B:</Text> {item.m_b}</Text>
+                    <Text><Text style={styles.star}>Mag. Staggered:</Text> {item.mag_staggered}</Text>
+                    <Text><Text style={styles.total}>Total magnetization:</Text> {item.mag_total}</Text>
                 </View>
             ))}
         </ScrollView>
