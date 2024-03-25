@@ -17,7 +17,9 @@
 
 Dentro da teoria do campo médio, o **modelo de Blume-Capel** destaca-se no estudo de sistemas de spins mistos. No entanto, sua solução não é trivial, pois envolve sistemas de equações hiperbólicas autoconsistentes. A expressão para o Hamiltoniano do modelo é
 
-![Web 1](./public/equat.png) 
+<div align='center'> 
+<img src="./public/equat.png">
+</div>
 
 Nessa perspectiva, o presente projeto propõe um conjunto de *softwares* para auxiliar pesquisadores da área com as soluções das equações e outros dados importantes. Com o objetivo de alcançar esse intento, o projeto é composto por três partes fundamentais: **backend**, **web** e **mobile**. O **backend**, desenvolvido em **Java**, oferece uma **API** com dados persistentes do banco, permitindo aos usuários consumi-los sem a necessidade de resolver equações, proporcionando assim a continuidade de suas pesquisas de forma eficiente. A parte **web**, criada com **React**, disponibiliza uma plataforma que consome a **API** e também permite a modificação dos dados, especialmente quando o usuário possui privilégios de administrador. Já a parte **mobile**, elaborada com **React Native**, oferece uma interface elegante e de fácil uso, possibilitando um acesso rápido e intuitivo aos dados necessários.
 
