@@ -22,6 +22,11 @@ Dentro da teoria do campo médio, o **modelo de Blume-Capel** destaca-se no estu
 
 <img src="./public/menina.gif" min-width="100px" max-width="100px" width="300px" align="right" alt="Computador iuriCode">
 
+### • Design
+
+![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%23051D34?style=for-the-badge&logo=adobe%20photoshop&logoColor=%233CA3F7)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
 ### • Backend
 
 [![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
@@ -138,13 +143,9 @@ Dê uma espiada no nosso projeto em funcionamento e esclareça todas as suas dú
 
 ![Web 1](./public/web.gif) 
 
-### Responsividade
+## 📱 Responsividade e Mobile
 
-![Web 2](./public/webResponsivo.png) 
-
-## 📱 Mobile
-
-![Mob 1](./public/mob.gif) 
+![Web 2](./public/resp.jpeg) ![Mob 1](./public/mob.gif) 
 
 ## 📺 Editor de código
 
