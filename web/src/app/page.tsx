@@ -5,7 +5,7 @@ import { IoBookOutline } from "react-icons/io5";
 
 export default function Page() {
   return (
-    <div className='h-screen flex flex-col justify-center items-center' style={{ backgroundImage: `url('/assets/images/background.png')` }}>
+    <div className='h-screen w-full flex flex-col justify-center items-center' style={{ backgroundImage: `url('/assets/images/background.png')` }}>
       <div className="">
         <Titulo />
       </div>

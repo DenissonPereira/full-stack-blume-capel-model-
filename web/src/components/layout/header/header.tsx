@@ -9,12 +9,12 @@ const Header = async () => {
     const session = await getServerSession()
 
     return (
-        <header className="fixed w-full h-20 flex items-center bg-primary text-slate-50">
-            <nav className="w-full flex item-center justify-between m-auto max-w-screen-xl text-branco text-sm text-br">
-                <ul className="flex items-center gap-10">
+        <header className="fixed w-full h-20 flex items-center bg-primary">
+            <nav className="w-full flex item-center justify-center md:justify-between m-auto max-w-screen-xl text-branco text-xs md:text-xl text-br">
+                <ul className="hidden md:flex items-center md:di">
                     <Link href="/"><DiAtom style={{ fontSize: 50 }} /></Link>
                 </ul>
-                <ul className="flex items-center gap-10">
+                <ul className="flex items-center gap-0 md:gap-10">
                     <Link href="/">
                         <li className="hover:bg-laranja p-3 rounded-md cursor-pointer">Home</li>
                     </Link>
