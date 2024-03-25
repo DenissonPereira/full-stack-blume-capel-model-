@@ -151,7 +151,7 @@ Dê uma espiada no nosso projeto em funcionamento e esclareça todas as suas dú
 
 ## 📱 Responsividade e Mobile
 
-![Web 2](./public/res.jpeg) ![Mob 1](./public/mob.gif) 
+![Web 2](./public/res.jpeg) ![Mob 1](./public/RPReplay_Final1711383878.gif) 
 
 ## 📺 Editor de código
 
