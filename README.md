@@ -20,7 +20,7 @@ Dentro da teoria do campo médio, o **modelo de Blume-Capel** destaca-se no estu
 
 ## 📚 Stack Tecnológica
 
-<img src="./public/menina.gif" min-width="100px" max-width="100px" width="100px" align="right" alt="Computador iuriCode">
+<img src="./public/menina.gif" min-width="100px" max-width="100px" width="300px" align="right" alt="Computador iuriCode">
 
 ### • Backend
 
